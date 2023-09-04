@@ -1,0 +1,22 @@
+.popupBlock{
+    width: 500px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: -500px;
+    z-index: 9999;
+    transition: 0.2s;
+}
+.showPopup{
+    right: 0;
+}
+.bagClose{
+    z-index: 9999;
+    position: absolute;
+    right: 15px;
+}
+.bagClose h3{
+    cursor: pointer;
+}

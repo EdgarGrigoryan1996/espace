@@ -1,0 +1,44 @@
+.categoriesList{
+    padding: 0 100px;
+}
+.categoryListItem{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 15px;
+    background-color: #dadada;
+    margin: 10px 0;
+}
+.categoryControllers{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    right: 0;
+}
+.categoryControllers svg{
+    cursor: pointer;
+    margin: 0 0 0 10px;
+    font-size: 18px;
+}
+.editInput{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.editInputActive{
+    display: block;
+}
+.editInput input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.editInput input::placeholder{
+    color: #de3f3f;
+
+    padding: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,81 @@
+.authBlock{
+    width: 100%;
+    height: 100%;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.authSlide{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 200%;
+    display: flex;
+}
+.authSignIn {
+    left: 0;
+}
+.authSignUp {
+    right: 0;
+}
+.authSlide > div {
+    width: 100%;
+    flex-basis: 100%;
+}
+.authSlide input{
+    border:none;
+    outline: none;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--main-color);
+    padding: 10px;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 18px;
+    transition: 0.2s;
+}
+.authSlide input:focus{
+    border-color: var(--second-color);
+}
+.authSlide input::placeholder{
+    color: #aaa;
+}
+
+
+
+.authSlide button {
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: var(--main-color);
+    color:#fff;
+    transition: 0.2s;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.authSlide button:hover{
+    background: var(--second-color);
+    color:var(--black);
+}
+.authSlide p {
+    font-size: 13px;
+    margin-top: 15px;
+    color: var(--black);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.authSlide p:hover{
+    color: var(--second-color);
+}
+.inputBlock{
+    display: flex;
+    flex-direction: column;
+}
+.errMsg{
+    color: #de3f3f;
+    
+}

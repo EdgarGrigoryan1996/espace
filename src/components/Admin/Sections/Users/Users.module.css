@@ -1,0 +1,158 @@
+.usersTable{
+    width: 100%;
+}
+.usersTable tr:nth-child(even){
+    background-color: #5E92CA;
+}
+.usersTable tr:nth-child(odd){
+    background-color: #aacdf3;
+}
+.usersTable tr td{
+    padding: 5px;
+}
+.userController {
+    text-align: center;
+    font-size: 20px;
+}
+.userController span{
+    cursor: pointer;
+}
+
+.userController span:last-child{
+    color: #f84848;
+    margin-left: 10px;
+}
+
+/*Popup*/
+.editPopup{
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.editPopupActive{
+    visibility: visible;
+}
+.popupBlock{
+    transition: all 0.5s;
+    position: relative;
+    width: 700px;
+    height: 95%;
+    border-radius: 15px;
+    background-color: white;
+    transform: translate(0,105%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popupBlock:after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 4px;
+    background-color: var(--main-color);
+    top: 22px;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%);
+
+}
+.popupBlockActive{
+    transform: translate(0,0);
+}
+.close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+    color: #de3f3f;
+    font-weight: bold;
+    cursor: pointer;
+}
+.inputsGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--main-color);
+    font-size: 14px;
+    width: 80%;
+}
+.inputBlock{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.inputBlock input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    margin: 50px 0;
+    width: 60%;
+    padding: 10px 0;
+}
+.inputsGroup button{
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: var(--main-color);
+    color:#fff;
+    transition: 0.2s;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.inputsGroup button:hover{
+    background: var(--second-color);
+    color:var(--black);
+}
+
+/*Delete Popup*/
+.deletePopup{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.deletePopupBlock{
+    width: 400px;
+    height: 300px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    border-radius: 10px;
+}
+.deletePopupBlock button{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deletePopupBlock button:first-child{
+    background-color: #de3f3f;
+    color: white;
+}
+
+.deletePopupBlock button:last-child{
+    background-color: var(--main-color);
+    color: white;
+}

@@ -1,0 +1,42 @@
+.offerGiftWrapper{
+    display: flex;
+    height: 75vh;
+}
+.offerGiftWrapper > div:first-child {
+    flex-basis: 40%;
+}
+.offerGiftWrapper > div:last-child {
+    flex-basis: 60%;
+}
+.aboutOfferGift{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.aboutOfferGift > div h2{
+    font-size: 76px;
+    color: #fff;
+}
+.aboutOfferGift > div p{
+    margin: 30px 0;
+    font-size: 22px;
+}
+.aboutOfferGift button{
+    padding: 10px;
+    border: none;
+    background-color: #fff;
+    color: var(--black);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: bold;
+}
+.aboutOfferGift button:hover {
+    background-color: var(--black);
+    color: #fff;
+}
+.imageBlock{
+    position: relative;
+}

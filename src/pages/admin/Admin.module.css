@@ -1,0 +1,32 @@
+.adminBlock{
+    display: flex;
+}
+.sidebar{
+    flex-basis: 15%;
+}
+.adminContent{
+    flex-basis: 85%;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
+}
+.sidebar ul li{
+    cursor: pointer;
+    transition: 0.2s;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+.sidebar ul li:hover:not(.activeSection){
+    background-color: #35689e;
+
+}
+.sidebar ul li:not(:last-child){
+    border-bottom: 1px solid var(--second-color);
+}
+.sidebar ul .activeSection{
+    background-color: var(--second-color);
+    color: var(--black);
+}

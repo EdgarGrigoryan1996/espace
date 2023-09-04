@@ -1,0 +1,83 @@
+.headerWrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+.shopName{
+    text-align: center;
+    letter-spacing: 2px;
+}
+.shopName h1{
+    font-size: 42px;
+    color: var(--black);
+}
+.shopName h1 span{
+    color: var(--main-color);
+}
+.shopName h6{
+    color: #444;
+}
+.headerButtons{
+    position: absolute;
+    right: 20px;
+}
+.headerButtons ul {
+    gap: 20px;
+}
+.headerButtons ul li svg{
+    font-size: 32px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+/*BAG*/
+.bagWrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 9998;
+}
+.bagBlock{
+    width: 500px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: -500px;
+    z-index: 9999;
+    transition: 0.2s;
+}
+.showBag{
+    right: 0;
+}
+.bagHead{
+    display: flex;
+    justify-content: space-between;
+}
+.bagCount{
+    display: flex;
+    align-items: center;
+}
+.bagBlock h3{
+    font-size: 28px;
+}
+.bagCount div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+}
+.bagClose h3{
+    cursor: pointer;
+}

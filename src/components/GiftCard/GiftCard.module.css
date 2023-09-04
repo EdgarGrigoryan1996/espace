@@ -1,0 +1,72 @@
+.cardBlock{
+    flex-basis: 23%;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.image{
+    flex-basis: 70%;
+    background-color: #cccccc;
+}
+.content{
+    padding: 10px;
+    flex-basis: 30%;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #120C32;
+}
+.price{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+.addButton{
+    text-align: center;
+}
+.addButton button{
+    background-color: #120C32;
+    border:none;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 16px;
+}
+.addButton button:hover{
+    background-color: var(--second-color);
+    color: #120C32;
+}
+.view{
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+.favorite{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    border-bottom-left-radius:15px;
+    border-top-right-radius:15px;
+    color: #ccc;
+    font-size: 24px;
+    background-color: white;
+}
+.favorite svg:hover{
+    cursor: pointer;
+}

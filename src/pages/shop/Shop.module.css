@@ -1,0 +1,8 @@
+.giftsWrapper{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 50px 2%;
+    min-height: 60vh;
+}
